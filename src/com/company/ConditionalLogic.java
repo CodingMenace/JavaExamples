@@ -73,9 +73,8 @@ public class ConditionalLogic {
         System.out.println("Maximum is = " + max);
     }
 }
-
-
          */
+
         double firstDouble = 20.00d;
         double secondDouble = 80.00d;
         double addThenMultiply = (firstDouble + secondDouble) * 100.00d;
