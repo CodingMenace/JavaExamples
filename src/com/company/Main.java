@@ -27,18 +27,17 @@ public class Main {
         return score * 1000;
     }
 
-    public static int calcFeetAndInchesToCentimeters(double feet, double inches) {
+    public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
 
         if ((feet < 0) || (inches < 0 || inches > 12)) {
-            double totalCent = (inches * 2.54) + ((feet * 12) * 2.54);
-            return (int) totalCent;
+            return (inches * 2.54) + ((feet * 12) * 2.54);
 
         } else return -1;
     }
 
-    public static int calcFeetAndInchesToCentimeters(double inches) {
-        if (inches > 0){
-            int feetToInch = (int) inches * 12;
+    public static double calcFeetAndInchesToCentimeters(double inches) {
+        if (inches < 0){
+            int feetToInch = (int) inches / 12;
             int remainder = (int) inches % 12;
                 return calcFeetAndInchesToCentimeters(feetToInch,remainder);
         } else return -1;
