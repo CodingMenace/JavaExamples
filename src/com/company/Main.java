@@ -43,15 +43,6 @@ public class Main {
         } else return -1;
     }
 
-    public static String getDurationString(double minutes, double seconds) {
 
-        if ((minutes >= 0) && (seconds >= 59)) {
-
-            int hours = (int) minutes / 60;
-            int minutesLeft = (int) minutes % 60;
-//            int secondsLeft = (int)
-        }
-        return "Invalid value";
-    }
 
 }
