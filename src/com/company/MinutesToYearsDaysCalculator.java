@@ -7,7 +7,7 @@ public class MinutesToYearsDaysCalculator {
             System.out.println("Invalid Value");
         }
 
-       int hours = (int) minutes / 60;
+        int hours = (int) minutes / 60;
         int days = hours / 24;
         int years ;
 //        int remainingMinutes = (int) minutes % 525600;
