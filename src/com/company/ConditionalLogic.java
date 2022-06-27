@@ -13,7 +13,6 @@ public class ConditionalLogic {
         int topScore = 10;
         if (topScore == 100) {
             System.out.println("You got the high score!");
-
         }
         int secondTopScore = 85;
         if ((topScore > secondTopScore) && (topScore < 100)) {
