@@ -27,10 +27,8 @@ public class ConditionalLogic {
             System.out.println("this is not supposed to happen but it will");
         }
 
-        boolean wasCar = isCar;
-
+        boolean wasCar = isCar ? true: false;
         //variable = Expression1 ? Expression2: Expression3
-
         /*
         if(Expression1)
         {

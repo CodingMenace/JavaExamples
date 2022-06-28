@@ -22,7 +22,7 @@ public class Expressions {
             System.out.println("Your score was 5000");
         } else
             System.out.println("This was executed");
-        
+
 
     }
 }
