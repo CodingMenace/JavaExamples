@@ -13,7 +13,7 @@ public class Methods {
 
     public static void main(String[] args) {
         boolean gameOver = true;
-        int score = 800;
+        int score = 900;
         int levelCompleted = 5;
         int bonus = 100;
         String name = "John";
@@ -21,9 +21,24 @@ public class Methods {
 
         int highScore =calculateScore(gameOver,score,levelCompleted,bonus);
         System.out.println(highScore);
-        
+        displayHighScorePosition(name,position);
+
+       score = 1500;
+       name = "Bob";
+       position = calculateHighScorePosition(score);
        displayHighScorePosition(name,position);
-        System.out.println(position);
+
+        score = 400;
+        name = "James";
+        position = calculateHighScorePosition(score);
+        displayHighScorePosition(name,position);
+
+        score = 50;
+        name = "Sally";
+        position = calculateHighScorePosition(score);
+        displayHighScorePosition(name,position);
+
+
     }
 
     public static void displayHighScorePosition(String name, int position){
