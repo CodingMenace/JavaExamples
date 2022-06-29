@@ -14,14 +14,20 @@ public class Expressions {
         System.out.println("My number is " + myVariable);
 
         boolean gameOver = true;
-        int score = 5000;
-        int levelCompleted = 5;
-        int bonus = 100;
+        int score = 10000;
+        int levelCompleted = 8;
+        int bonus = 200;
+        int finaScore = score + (levelCompleted * bonus);
 
         if (score <= 4000) {
             System.out.println("Your score was 5000");
         } else
             System.out.println("This was executed");
+
+        if (gameOver){
+            System.out.println("Your final score was " + finaScore);
+        }
+
 
 
     }
