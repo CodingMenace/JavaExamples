@@ -4,16 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-       long miles = SpeedConverter.toMilesPerHour(10.5);
-        System.out.println("Miles = " + miles);
+        long miles = SpeedConverter.toMilesPerHour(10.5);
+        System.out.println(miles);
         SpeedConverter.printConversion(10.5);
 
-        int newScore = calculateScore("Tim", 500);
-        System.out.println("New Score is " + newScore);
-
-        int unknownPlayer = calculateScore(350);
-        System.out.println("Unknown Score is " + unknownPlayer);
-
+//        int newScore = calculateScore("Tim", 500);
+//        System.out.println("New Score is " + newScore);
+//
+//        int unknownPlayer = calculateScore(350);
+//        System.out.println("Unknown Score is " + unknownPlayer);
 
 
     }
@@ -37,13 +36,12 @@ public class Main {
     }
 
     public static double calcFeetAndInchesToCentimeters(double inches) {
-        if (inches < 0){
+        if (inches < 0) {
             int feetToInch = (int) inches / 12;
             int remainder = (int) inches % 12;
-                return calcFeetAndInchesToCentimeters(feetToInch,remainder);
+            return calcFeetAndInchesToCentimeters(feetToInch, remainder);
         } else return -1;
     }
-
 
 
 }
