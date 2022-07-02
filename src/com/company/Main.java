@@ -8,12 +8,7 @@ public class Main {
         System.out.println(miles);
         SpeedConverter.printConversion(10.5);
 
-//        int newScore = calculateScore("Tim", 500);
-//        System.out.println("New Score is " + newScore);
-//
-//        int unknownPlayer = calculateScore(350);
-//        System.out.println("Unknown Score is " + unknownPlayer);
-
+        System.out.println(LeapYear.isLeapYear(2024));
 
     }
 
