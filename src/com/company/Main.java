@@ -4,11 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        long miles = SpeedConverter.toMilesPerHour(10.5);
-        System.out.println(miles);
-        SpeedConverter.printConversion(10.5);
-
-        System.out.println(LeapYear.isLeapYear(2024));
+        System.out.println(calcFeetAndInchesToCentimeters(48));
 
     }
 
@@ -24,16 +20,16 @@ public class Main {
 
     public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
 
-        if ((feet < 0) || (inches < 0 || inches > 12)) {
+        if ((feet < 0) || (inches > 0 || inches <= 12)) {
             return (inches * 2.54) + ((feet * 12) * 2.54);
 
         } else return -1;
     }
 
     public static double calcFeetAndInchesToCentimeters(double inches) {
-        if (inches < 0) {
-            int feetToInch = (int) inches / 12;
-            int remainder = (int) inches % 12;
+        if (inches > 0) {
+            double feetToInch =  inches / 12;
+            double remainder = inches % 12;
             return calcFeetAndInchesToCentimeters(feetToInch, remainder);
         } else return -1;
     }
