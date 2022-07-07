@@ -5,8 +5,8 @@ public class SecondAndMinutesChallenge {
     public static void main(String[] args) {
 
 
-        System.out.println(getDurationString(88, 60));
-        System.out.println(getDurationString(3779));
+        System.out.println(getDurationString(61, 0));
+        System.out.println(getDurationString(3600));
 
     }
 

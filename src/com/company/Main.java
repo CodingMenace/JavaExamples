@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(calcFeetAndInchesToCentimeters(48));
+        calcFeetAndInchesToCentimeters(50);
 
     }
 
@@ -21,16 +21,21 @@ public class Main {
     public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
 
         if ((feet < 0) || (inches > 0 || inches <= 12)) {
+
+            double centimeters = (feet * 12) * 2.54;
+            System.out.println(feet + " feet " + inches + " inches = " + centimeters + " cm");
             return (inches * 2.54) + ((feet * 12) * 2.54);
+
+
 
         } else return -1;
     }
 
     public static double calcFeetAndInchesToCentimeters(double inches) {
         if (inches > 0) {
-            double feetToInch =  inches / 12;
-            double remainder = inches % 12;
-            return calcFeetAndInchesToCentimeters(feetToInch, remainder);
+            double inchesToFeet =  inches / 12;
+            double remainingInches = inches % 12;
+            return calcFeetAndInchesToCentimeters(inchesToFeet, remainingInches);
         } else return -1;
     }
 
