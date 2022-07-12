@@ -4,7 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        calcFeetAndInchesToCentimeters(50);
+        //  calcFeetAndInchesToCentimeters(50);
+
+        Car porsche = new Car();
+        Car holden = new Car();
+
+
+
+
 
     }
 
@@ -27,13 +34,12 @@ public class Main {
             return (inches * 2.54) + ((feet * 12) * 2.54);
 
 
-
         } else return -1;
     }
 
     public static double calcFeetAndInchesToCentimeters(double inches) {
         if (inches > 0) {
-            double inchesToFeet =  inches / 12;
+            double inchesToFeet = inches / 12;
             double remainingInches = inches % 12;
             return calcFeetAndInchesToCentimeters(inchesToFeet, remainingInches);
         } else return -1;
