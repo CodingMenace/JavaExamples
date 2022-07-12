@@ -5,8 +5,6 @@ public class Student {
     String lastname;
     String courseFocus;
 
-    //Software Objects store it's State in Fields
-    //" Behavior in Methods
 
 
 }
