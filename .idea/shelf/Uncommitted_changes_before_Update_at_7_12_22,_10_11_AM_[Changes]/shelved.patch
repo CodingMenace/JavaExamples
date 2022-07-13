@@ -1,0 +1,38 @@
+Index: src/com/company/AreaCalculator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\n\npublic class AreaCalculator {\n\n    private static double area (double radius){\n        if (radius < 0){\n            return -1;\n        }\n\n        return (radius * radius) * Math.PI;\n    }\n\n    private static double area (double x, double y){\n        if (x < 0 || y< 0){\n            return -1;\n        }\n\n\n        return x * y;\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/AreaCalculator.java b/src/com/company/AreaCalculator.java
+--- a/src/com/company/AreaCalculator.java	(revision d2a158c3238ed8be4d01788cce370a4a575b8f27)
++++ b/src/com/company/AreaCalculator.java	(date 1657633378515)
+@@ -3,6 +3,7 @@
+ public class AreaCalculator {
+ 
+     private static double area (double radius){
++
+         if (radius < 0){
+             return -1;
+         }
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectKey\">\n    <option name=\"state\" value=\"project://e2804f05-5315-4fc6-a121-c522a6c26470\" />\n  </component>\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_14\" default=\"false\" project-jdk-name=\"openjdk-15\" project-jdk-type=\"JavaSDK\">\n    <output url=\"file://$PROJECT_DIR$/out\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision d2a158c3238ed8be4d01788cce370a4a575b8f27)
++++ b/.idea/misc.xml	(date 1657633558760)
+@@ -3,7 +3,7 @@
+   <component name="ProjectKey">
+     <option name="state" value="project://e2804f05-5315-4fc6-a121-c522a6c26470" />
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="openjdk-15" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="openjdk-18" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
