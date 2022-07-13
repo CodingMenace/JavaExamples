@@ -4,12 +4,14 @@ public class Student {
     String firstName;
     String lastName;
     String courseFocus;
+    private String initials;
 
     // constructor
     public Student(){
         firstName = "";
         lastName = "";
         courseFocus = "";
+        initials = "";
     }
 
     // overloaded constructor
@@ -17,6 +19,7 @@ public class Student {
         firstName = first;
         lastName = last;
         courseFocus = focus;
+        setInitials();
     }
 
     // getter method
@@ -47,5 +50,17 @@ public class Student {
     // setter method
     public void setCourseFocus(String newCourseFocus){
         courseFocus = newCourseFocus;
+    }
+
+    // private setter method
+    private void setInitials(){
+        String firstNameInitial = firstName.substring(0,1);
+        String lastNameInitial = lastName.substring(0,1);
+        initials = firstNameInitial + lastNameInitial;
+    }
+
+    // getter method
+    public String getInitials(){
+        return initials;
     }
 }
