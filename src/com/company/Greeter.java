@@ -1,32 +1,38 @@
 package com.company;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 
 class Greeter {
-    Person[] people;
-    String[] greetings;
 
-    /*
-    Use a loop to fill the greetings array with strings that use
-    the firstName and lastName properties from each of the Person
-    objects in the people variable.
-    Each greeting string should say "Hello FIRST LAST!", where "FIRST" and "LAST" are replaced
-    with the values from the person (firstName and lastName).
+   public Person[] getPeople() {
+      return people;
+   }
 
-    Return the array of greetings.
+   public void setPeople(Person[] people) {
+     this.people = people;
+   }
 
-    For instance, if the input to the static greet method of the
-    Greeter class were two people named "Bill Barnes" and "Sally Smith,"
-    the result would be an array of two Strings:
-    "Hello Bill Barnes!"
-    "Hello Sally Smith!"
-     */
+   public String[] getGreetings() {
+      return greetings;
+   }
 
-//    public static String[] loopGreeting() {
-//
-//
-//        return
-//    }
+   public void setGreetings(String[] greetings) {
+      this.greetings = greetings;
+   }
 
+   private  Person[] people;
+   private  String[] greetings;
+
+
+   public static String[] greet(Person[] people){
+
+      String[] greetings = new String[people.length];
+
+      for (int i = 0; i < greetings.length; i++) {
+         greetings[i] =  "Hello "  + people[i].firstName + " "  + people[i].lastName + "!";
+      }
+   return greetings;
+   }
 
 }

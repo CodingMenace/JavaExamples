@@ -7,6 +7,9 @@ public class ForLoop {
 //        for (int i = 2; i <= 8; i++) {
 //            System.out.printf("%.2f%n",calculateInterest(10000,i));
 //        }
+//        for(init; termination ; increment){   }
+//
+//
 //
 //        //reversed//
 //        for (int i = 8; i >= 2; i--) {
