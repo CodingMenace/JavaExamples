@@ -3,7 +3,9 @@ package com.company;
 public class MinutesToYearsDaysCalculator {
 
     public static void main(String[] args) {
-        printYearsAndDays(1440);
+
+        printYearsAndDays(525600);
+
     }
 
     public static void printYearsAndDays(long minutes) {
@@ -12,8 +14,8 @@ public class MinutesToYearsDaysCalculator {
             System.out.println("Invalid Value");
         }
 
-        int hours = (int) minutes / 60;
-        int days = hours / 24;
+
+        int days = ((int) minutes / 60) / 24;
         int years = 0;
 
         if (minutes >= 525600) {
@@ -33,6 +35,7 @@ public class MinutesToYearsDaysCalculator {
                 System.out.println(minutes + " min = " + years + " y and " + days + " d");
             }
         }
+
         if (minutes < 525600 && minutes >= 0) {
             if (minutes > 1440) {
                 System.out.println(minutes + " min = " + years + " y and " + days + " d");
