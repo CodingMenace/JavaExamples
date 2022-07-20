@@ -102,4 +102,9 @@ class Break3{
     }
 }
 
-//
+//Using break with a label
+class  Break4{
+    public static void main(String[] args) {
+
+    }
+}
