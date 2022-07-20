@@ -7,21 +7,25 @@ public class StudentCode {
         return "Hello " + name;
     }
 
-    public double getAverage(double[] numbers){
+    public int[] doubleArray(int[] numbers){
 
-        int numberOfNumbers = numbers.length;
-        double average = 0.0;
 
+        int result = 0;
+        int[] resultsArray = new int[0];
         if (numbers.length == 0){
-            return 0;
+            return new int[]{0};
         } else {
-            for (double number : numbers) {
-                average += number;
+            for (int number : numbers) {
+                result += number * 2;
+                return new int[]{result};
             }
         }
 
 
-        return average / numberOfNumbers;
+        return new int[]{result};
     }
+
+
+
 
 }
