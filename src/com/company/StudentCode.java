@@ -11,7 +11,6 @@ public class StudentCode {
 
 
         int result = 0;
-        int[] resultsArray = new int[0];
         if (numbers.length == 0){
             return new int[]{0};
         } else {
