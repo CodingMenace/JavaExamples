@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-
         // animal factory
         AnimalFactory animalFactory = new AnimalFactory();
 
@@ -20,9 +19,6 @@ public class Main {
         // produce a cat and speak
         Animal cat = animalFactory.getAnimal("Cat");
         cat.speak();
-
-
-
     }
 
     public static int calculateScore(String playerName, int score) {
