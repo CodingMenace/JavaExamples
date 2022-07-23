@@ -41,13 +41,13 @@ public class ForLoop {
 
         for (int i = 1; i < 1000; i++) {
 
-            if ((i % 3 == 0) && (i % 5 == 0)){
-                sum+=i;
+            if ((i % 3 == 0) && (i % 5 == 0)) {
+                sum += i;
                 count++;
                 System.out.println(" Found one number " + i);
 
-                if (count == 20){
-                    System.out.println("Total sum of all numbers divisible by 3 & 5 == "+ sum);
+                if (count == 20) {
+                    System.out.println("Total sum of all numbers divisible by 3 & 5 == " + sum);
                     break;
                 }
             }
@@ -55,19 +55,17 @@ public class ForLoop {
     }
 
 
-
-
-    public static double calculateInterest(double amount, double interestRate){
+    public static double calculateInterest(double amount, double interestRate) {
         return (amount * (interestRate / 100));
     }
 
-    public static boolean isPrime(int n){
+    public static boolean isPrime(int n) {
         //i <= n/2
-        if(n==1){
+        if (n == 1) {
             return false;
         }
-        for (int i = 2; i <= (long) Math.sqrt(n) ; i++) {
-            if (n % i == 0){
+        for (int i = 2; i <= (long) Math.sqrt(n); i++) {
+            if (n % i == 0) {
                 return false;
             }
         }
