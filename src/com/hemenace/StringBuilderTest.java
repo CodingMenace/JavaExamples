@@ -6,9 +6,9 @@ public class StringBuilderTest {
         String[] cities = {"Tokyo", "Delhi", "Shanghai", "Mexico City", "São Paulo"};
         StringBuilder sb = new StringBuilder();
         // loop through all the cities
-        for(int i = 0; i < cities.length; i++){
+        for (String city : cities) {
             // concatenate the city names
-            sb.append(cities[i]);
+            sb.append(city);
             // concatenate a comma between each city name for increased readability
             sb.append(", ");
         }

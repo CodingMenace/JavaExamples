@@ -6,21 +6,12 @@ public class Switch {
 
         int intValue = 3;
 
-        switch (intValue){
+        switch (intValue) {
+            case 1 -> System.out.println("Value was 1");
+            case 2 -> System.out.println("Value was 2");
+            case 3, 4, 5 -> System.out.println("Was a 3, 4 or 5");
+            default -> System.out.println("Was not 1 or 2");
 
-            case 1:
-                System.out.println("Value was 1");
-                break;
-            case 2:
-                System.out.println("Value was 2");
-                break;
-
-            case 3: case 4: case 5:
-                System.out.println("Was a 3, 4 or 5");
-                break;
-            default:
-                System.out.println("Was not 1 or 2");
-                break;
 
                 /*
                 Switch is only good to use if you are testing the same variable for different values
@@ -33,20 +24,11 @@ public class Switch {
 
         value = 'C';
 
-        switch (value){
-
-            case 'A':
-                System.out.println("It's A");
-                break;
-            case 'B':
-                System.out.println("It's B");
-                break;
-            case 'C': case 'D':
-                System.out.println("It's C or D");
-                break;
-            default:
-                System.out.println("It wasn't A-D");
-                break;
+        switch (value) {
+            case 'A' -> System.out.println("It's A");
+            case 'B' -> System.out.println("It's B");
+            case 'C', 'D' -> System.out.println("It's C or D");
+            default -> System.out.println("It wasn't A-D");
         }
 
     }
