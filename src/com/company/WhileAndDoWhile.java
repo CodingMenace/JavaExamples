@@ -149,4 +149,7 @@ class Break5{
         System.out.println("After i loop");
     }
 }
-//Where you
+//Where you put a label is important
+class Break6 {
+    
+}
