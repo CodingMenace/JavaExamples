@@ -5,13 +5,13 @@ public class Switch {
     public static void main(String[] args) {
 
         int intValue = 3;
+        printDayOfTheWeek(intValue);
 
         switch (intValue) {
             case 1 -> System.out.println("Value was 1");
             case 2 -> System.out.println("Value was 2");
             case 3, 4, 5 -> System.out.println("Was a 3, 4 or 5");
             default -> System.out.println("Was not 1 or 2");
-
 
                 /*
                 Switch is only good to use if you are testing the same variable for different values
@@ -31,5 +31,19 @@ public class Switch {
             default -> System.out.println("It wasn't A-D");
         }
 
+    }
+
+    public static void printDayOfTheWeek(int day) {
+
+        switch (day) {
+            case 1 -> System.out.println("Sunday");
+            case 2 -> System.out.println("Monday");
+            case 3 -> System.out.println("Tuesday");
+            case 4 -> System.out.println("Wednesday");
+            case 5 -> System.out.println("Thursday");
+            case 6 -> System.out.println("Friday");
+            case 7 -> System.out.println("Saturday");
+            default -> System.out.println("Invalid Day");
+        }
     }
 }
