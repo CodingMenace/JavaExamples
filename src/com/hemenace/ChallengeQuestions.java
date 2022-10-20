@@ -89,6 +89,7 @@ public class ChallengeQuestions {
 //       like we have been doing so far in the course.
 //       NOTE: Do not add a main method to the solution code.
         public static int getGreatestCommonDivisor(int first, int second) {
+
             if (first < 10 || second < 10)
                 return -1;
 
@@ -100,9 +101,7 @@ public class ChallengeQuestions {
                     divisor = i;
                 }
             }
-
            return divisor;
-
         }
 
     }
