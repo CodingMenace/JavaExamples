@@ -43,6 +43,8 @@ public class ChallengeQuestions {
 
     }
 
+
+
     public static int DigitSum(int num) {
         int sum = 0;
         int digit;
